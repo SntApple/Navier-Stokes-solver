@@ -1,0 +1,70 @@
+﻿{
+  "SavesFolder":  "./run/saves/",
+  "Domains": [
+    {
+      "Type": "hex",
+      "MinPoint": [ 0.0, 0.0 ],
+      "MaxPoint": [ 2.0, 1.0 ],
+      "MaterialName": "Water"
+    },
+    {
+      "Type": "circle",
+      "MinPoint": [ 0.0, 0.0 ],
+      "MaxPoint": [ 2.0, 1.0 ],
+      "MaterialName": "Air"
+    }
+  ],
+  "Mesh": {
+    "res": [ 20, 10 ]
+  },
+  "Materials": [
+    {
+      "Name": "Air",
+      "Rho": 1.25,
+      "Nu": 1.0e-05
+    },
+    {
+      "Name": "Water",
+      "Rho": 1.25,
+      "Nu": 1.0e-05
+    }
+  ],
+  "Initial": {
+    "P": 0.0,
+    "UX": 0.0,
+    "UY": 0.0
+  },
+  "Boundaries": [
+    {
+      "Type": "-x",
+      "P": {
+        "Type": "Gradient",
+        "Value": 0.0
+      },
+      "UX": {
+        "Type": "Scalar",
+        "Value": 0.0
+      },
+      "UY": {
+        "Type": "Scalar",
+        "Value": 0.0
+      }
+    },
+    {
+      "Type": "+x",
+      "P": {
+        "Type": "Gradient",
+        "Value": 0.0
+      },
+      "UX": {
+        "Type": "Scalar",
+        "Value": 0.0
+      },
+      "UY": {
+        "Type": "Scalar",
+        "Value": 0.0
+      }
+    }
+  ]
+
+}

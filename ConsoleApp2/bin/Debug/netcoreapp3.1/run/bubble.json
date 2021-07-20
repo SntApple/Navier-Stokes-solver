@@ -1,0 +1,17 @@
+﻿{
+  "SavesFolder":  "./run/saves/",
+  "Domains": [
+    {
+      "Type": "hex",
+      "MinPoint": [ 0.0, 0.0 ],
+      "MaxPoint": [ 2.0, 1.0 ],
+      "MaterialName": "Water"
+    },
+    {
+      "Type": "circle",
+      "MinPoint": [ 0.0, 0.0 ],
+      "MaxPoint": [ 2.0, 1.0 ],
+      "MaterialName": "Air"
+    }
+  ]
+}
